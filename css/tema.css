@@ -1,0 +1,34 @@
+/* ============================================================
+   Café Café · tema visual
+   tailwind.config.js usa estos canales RGB para crear las clases
+   (bg-noche, text-rosa, border-rosa/50, etc.).
+   ============================================================ */
+
+:root {
+    --noche-rgb: 11 1 9;
+    --ciruela-rgb: 23 2 22;
+    --vino-rgb: 94 7 32;
+    --cereza-rgb: 114 8 28;
+    --orchid-rgb: 93 16 82;
+    --magenta-rgb: 143 38 86;
+    --malva-rgb: 164 111 134;
+    --rosa-rgb: 221 179 196;
+    --crema-rgb: 250 245 245;
+}
+
+html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+}
+
+/* Las fotos del inicio están en gris hasta el hover/foco */
+.photo-frame img {
+    filter: grayscale(1);
+    transition: transform 350ms ease, filter 350ms ease;
+}
+
+.photo-frame:hover img,
+.photo-frame:focus-within img {
+    filter: grayscale(0);
+    transform: scale(1.035);
+}

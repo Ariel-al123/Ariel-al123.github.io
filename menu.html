@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B0109">
+    <meta name="description" content="Carta de Café Café: cafés, panadería, postres, bebidas y recomendados de la casa.">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tema centralizado: colores y estilos base en css/tema.css -->
+    <script src="js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="css/tema.css">
+
+    <title>Carta y Recomendaciones | Café Café</title>
+</head>
+
+<body class="overflow-x-hidden bg-noche text-crema antialiased">
+
+    <header class="sticky top-0 z-40 border-b border-white/10 bg-noche/80 backdrop-blur">
+        <nav aria-label="Navegación principal" class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-4 sm:px-8">
+            <a href="index.html" class="flex shrink-0 items-center gap-3" aria-label="Café Café, ir al inicio">
+                <span class="h-10 w-10 shrink-0 overflow-hidden rounded-full bg-vino ring-1 ring-rosa/30">
+                    <img src="img/Coffee_b.webp" alt="Logo de Café Café" class="h-full w-full object-contain">
+                </span>
+                <span class="whitespace-nowrap font-serif text-xl font-semibold tracking-tight">Café Café</span>
+            </a>
+            <ul class="flex flex-wrap items-center gap-3 text-sm font-medium sm:gap-6">
+                <li><a class="transition hover:text-rosa" href="index.html">Inicio</a></li>
+                <li class="hidden md:block"><a class="transition hover:text-rosa" href="index.html#cafes">Cafés</a></li>
+                <li><a class="transition hover:text-rosa" href="prepara-tu-cafe.html">Haz tu café café</a></li>
+                <li><a aria-current="page" class="rounded-full bg-rosa px-4 py-2.5 font-semibold text-noche transition hover:bg-malva" href="menu.html">Carta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="carta-title" class="border-b border-white/10 bg-vino/20">
+            <div class="mx-auto max-w-7xl px-5 py-12 sm:px-8 sm:py-14">
+                <p class="mb-2 text-xs font-semibold uppercase tracking-[0.24em] text-rosa">Café Café</p>
+                <h1 id="carta-title" class="font-serif text-4xl tracking-tight sm:text-5xl">Nuestra carta</h1>
+                <p class="mt-3 max-w-xl text-sm text-stone-300">Lo más pedido, los favoritos de la casa</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="recomendados-title" class="mx-auto max-w-7xl px-5 py-12 sm:px-8 sm:py-16">
+            <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
+                <div>
+                    <p class="mb-2 text-xs font-semibold uppercase tracking-[0.24em] text-rosa">Los favoritos</p>
+                    <h2 id="recomendados-title" class="font-serif text-3xl">Recomendados de la casa</h2>
+                </div>
+            </div>
+
+            <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <article class="overflow-hidden rounded-3xl border border-white/10 bg-ciruela shadow-2xl shadow-noche/50">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="img/late.jpg" alt="Latte con arte de espuma servido en una taza de cerámica" class="h-full w-full object-cover object-center transition duration-300 hover:scale-105" loading="lazy">
+                        <span class="absolute left-4 top-4 rounded-full bg-rosa px-3 py-1 text-xs font-bold text-noche">Más pedido</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif text-xl">Latte de la casa</h3>
+                        <p class="mt-2 text-sm leading-6 text-stone-400">Espresso suave con leche cremosa y arte de espuma.</p>
+                        <p class="mt-4 font-semibold text-rosa">MX$65</p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-3xl border border-white/10 bg-ciruela shadow-2xl shadow-noche/50">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="img/capuchino.jpg" alt="Capuchino espumoso acompañado de un pan recién horneado" class="h-full w-full object-cover object-center transition duration-300 hover:scale-105" loading="lazy">
+                        <span class="absolute left-4 top-4 rounded-full bg-vino px-3 py-1 text-xs font-bold text-rosa">Con pan</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif text-xl">Capuchino</h3>
+                        <p class="mt-2 text-sm leading-6 text-stone-400">Espuma densa y pan recién horneado para acompañar.</p>
+                        <p class="mt-4 font-semibold text-rosa">MX$72</p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-3xl border border-white/10 bg-ciruela shadow-2xl shadow-noche/50">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="img/negro.jpg" alt="Café filtrado preparado al momento" class="h-full w-full object-cover object-center transition duration-300 hover:scale-105" loading="lazy">
+                        <span class="absolute left-4 top-4 rounded-full bg-vino px-3 py-1 text-xs font-bold text-rosa">Para los intensos</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif text-xl">Café Negro</h3>
+                        <p class="mt-2 text-sm leading-6 text-stone-400">Filtrado al momento, sin azúcar y con todo el carácter.</p>
+                        <p class="mt-4 font-semibold text-rosa">MX$58</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="productos-title" class="mx-auto max-w-7xl px-5 py-12 sm:px-8 sm:py-16">
+            <div class="mb-6 flex flex-wrap items-end justify-between gap-4">
+                <div>
+                    <p class="mb-2 text-xs font-semibold uppercase tracking-[0.24em] text-rosa">Completa</p>
+                    <h2 id="productos-title" class="font-serif text-3xl">Toda la carta</h2>
+                </div>
+                <div class="flex flex-wrap gap-2" role="group" aria-label="Filtrar la carta">
+                    <button type="button" class="boton-filtro rounded-full border border-white/15 px-4 py-2 text-xs font-semibold text-stone-300 transition hover:border-rosa hover:text-rosa" data-categoria="todos">Todos</button>
+                    <button type="button" class="boton-filtro rounded-full border border-white/15 px-4 py-2 text-xs font-semibold text-stone-300 transition hover:border-rosa hover:text-rosa" data-categoria="cafes">Cafés</button>
+                    <button type="button" class="boton-filtro rounded-full border border-white/15 px-4 py-2 text-xs font-semibold text-stone-300 transition hover:border-rosa hover:text-rosa" data-categoria="panaderia">Panadería</button>
+                    <button type="button" class="boton-filtro rounded-full border border-white/15 px-4 py-2 text-xs font-semibold text-stone-300 transition hover:border-rosa hover:text-rosa" data-categoria="postres">Postres</button>
+                    <button type="button" class="boton-filtro rounded-full border border-white/15 px-4 py-2 text-xs font-semibold text-stone-300 transition hover:border-rosa hover:text-rosa" data-categoria="bebidas">Bebidas</button>
+                </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" aria-live="polite">
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="cafes">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/Espresso - Coffee Class.jpg" alt="Taza de café espresso sobre fondo oscuro" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Espresso</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Shot doble, intenso y directo.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$25</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="cafes">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/americano.png" alt="Taza de café americano recién preparado" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Americano</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Espresso con agua caliente, suave y largo.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$30</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="cafes">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/latte.jpg" alt="Latte con arte de espuma en taza de cerámica" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Latte</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Leche cremosa y un toque de espuma.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$45</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="cafes">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/Cappuccino Chill – Gemini 3 Creation.jpg" alt="Capuchino espumoso servido en taza de cerámica" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Capuchino</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Espuma densa y cacao por encima.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$48</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="cafes">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/flat white.jpg" alt="Flat white con textura sedosa en taza de cerámica" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Flat white</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Textura sedosa con doble espresso.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$52</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="cafes">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/cold brew.jpg" alt="Café cold brew servido en frío" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Cold brew</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Reposo en frío, fresco y poco ácido.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$55</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="panaderia">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/croasan.jpg" alt="Croissant recién horneado" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Croissant</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Hojaldre recién horneado.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$35</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="panaderia">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/Pan de Yema.jpg" alt="Pan de yema esponjoso recién horneado" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Pan de yema</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Clásico esponjoso, ideal para el combo.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$38</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="panaderia">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/mufin.jpg" alt="Muffin de chocolate con trozos semiamargos" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Muffin de chocolate</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Con trozos de chocolate semiamargo.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$40</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="postres">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/Brownie Mix.png" alt="Brownie de chocolate con nuez" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Brownie</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Chocolate intenso con nuez.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$45</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="postres">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/cheesecake.jpg" alt="Cheesecake con base de galleta" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Cheesecake</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Crema suave con base de galleta.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$55</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="postres">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/galletas de mantequilla.jpg" alt="Galletas de mantequilla para acompañar el café" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Galletas de mantequilla</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Para acompañar el café negro.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$30</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="bebidas">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/te chai.jpg" alt="Taza de té chai con leche cremosa" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Té chai</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Especias con leche cremosa.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$42</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="bebidas">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/matcha latte.jpg" alt="Matcha latte servido en taza de cerámica" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Matcha latte</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Té verde japonés con leche.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$48</p>
+                    </div>
+                </article>
+                <article class="producto overflow-hidden rounded-2xl border border-white/10 bg-ciruela transition hover:border-rosa/50" data-categoria="bebidas">
+                    <div class="h-48 overflow-hidden bg-crema">
+                        <img src="img/chocolate caliente.jpg" alt="Taza de chocolate caliente" class="h-full w-full scale-125 object-contain p-2" loading="lazy">
+                    </div>
+
+                    <div class="p-4 pt-5">
+                        <h3 class="font-serif text-lg">Chocolate caliente</h3>
+                        <p class="mt-1 truncate text-xs text-stone-400">Para los días que piden calma.</p>
+                        <p class="mt-3 font-semibold text-rosa">MX$50</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="cta-title" class="border-t border-white/10 bg-vino/20">
+            <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-12 text-center sm:px-8 sm:py-16">
+                <h2 id="cta-title" class="font-serif text-3xl">Café Café</h2>
+                <a href="prepara-tu-cafe.html" class="mx-auto inline-flex rounded-full bg-rosa px-6 py-3 text-sm font-semibold text-noche transition hover:bg-malva">Arma tu café</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/10">
+        <div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 text-sm text-stone-400 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+            <p>© 2026 Café Café.</p>
+            <a href="index.html" class="inline-flex items-center gap-1 font-medium text-stone-300 transition hover:text-rosa">
+                Volver al inicio
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 19V5m-6 6 6-6 6 6"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B0109">
+    <meta name="description"
+        content="Café de especialidad de un show más, pan recién hecho y momentos para disfrutar sin prisa.">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tema centralizado: colores y estilos base en css/tema.css -->
+    <script src="js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="css/tema.css">
+
+    <title>Café Café | Un show más</title>
+</head>
+
+<body class="overflow-x-hidden bg-noche text-crema antialiased">
+
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-noche/80 backdrop-blur">
+        <nav aria-label="Navegación principal"
+            class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-4 sm:px-8">
+            <a href="#inicio" class="flex shrink-0 items-center gap-3" aria-label="Café Café, ir al inicio">
+                <span class="h-10 w-10 shrink-0 overflow-hidden rounded-full bg-vino ring-1 ring-rosa/30">
+                    <img src="img/Coffee_b.webp" alt="Logo de Café Café" class="h-full w-full object-contain">
+                </span>
+                <span class="whitespace-nowrap font-serif text-xl font-semibold tracking-tight">Café Café</span>
+            </a>
+
+            <ul class="flex items-center gap-4 text-sm font-medium sm:gap-8">
+                <li>
+                    <a class="transition hover:text-rosa" href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a class="transition hover:text-rosa" href="#cafes">Nuestros cafés</a>
+                </li>
+                <li class="hidden sm:block">
+                    <a class="transition hover:text-rosa" href="#opiniones">Opiniones</a>
+                </li>
+                <li class="hidden sm:block">
+                    <a class="transition hover:text-rosa" href="prepara-tu-cafe.html">Haz tu café café</a>
+                </li>
+                <li class="hidden lg:block">
+                    <a class="transition hover:text-rosa" href="menu.html">Carta</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" aria-labelledby="hero-title"
+            class="relative isolate min-h-[600px] overflow-hidden bg-ciruela sm:min-h-[680px]">
+            <img src="img/principal.jpg" alt="Taza de café recién preparado sobre una mesa de madera"
+                class="absolute inset-0 -z-20 h-full w-full object-cover object-center">
+            <div class="absolute inset-0 -z-10 bg-gradient-to-r from-noche/95 via-noche/75 to-noche/30"></div>
+
+            <div
+                class="mx-auto flex min-h-[600px] max-w-7xl items-center px-6 py-20 sm:min-h-[680px] sm:px-10 lg:px-16">
+                <div class="max-w-2xl text-white">
+                    <p class="mb-5 text-xs font-semibold uppercase tracking-[0.28em] text-rosa">Boletos con Cafeína · un
+                        show más</p>
+                    <h1 id="hero-title"
+                        class="font-serif text-5xl font-medium leading-[1.05] tracking-tight sm:text-7xl">
+                        Café Café<br>Un Show Más
+                    </h1>
+
+                    <div class="mt-9 flex flex-wrap gap-3">
+                        <a href="#cafes"
+                            class="inline-flex items-center gap-2 rounded-full bg-rosa px-6 py-3 text-sm font-semibold text-noche transition hover:bg-[#EBC8D5]">
+                            Descubre nuestros cafés
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="h-4 w-4"
+                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 17 17 7M7 7h10v10" />
+                            </svg>
+                        </a>
+                        <a href="#visitanos"
+                            class="rounded-full border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Encuéntranos</a>
+                        <a href="prepara-tu-cafe.html"
+                            class="rounded-full border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Arma
+                            tu café</a>
+                    </div>
+                </div>
+            </div>
+
+            <span aria-hidden="true"
+                class="absolute bottom-8 right-8 hidden font-serif text-sm italic text-white/70 md:block">Café Café,
+                Café Café</span>
+        </section>
+
+        <section id="cafes" aria-labelledby="cafes-title" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
+            <div class="mb-10 sm:mb-12">
+                <h2 id="cafes-title" class="font-serif text-4xl tracking-tight sm:text-5xl">Hechos para Fist Pump</h2>
+            </div>
+
+            <div class="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+                <article>
+                    <div class="photo-frame aspect-[4/5] overflow-hidden rounded-2xl bg-vino/30">
+                        <img src="img/late.jpg" alt="Latte con arte de espuma servido en una taza de cerámica"
+                            class="h-full w-full object-cover" loading="lazy">
+                    </div>
+                    <div class="flex items-start justify-between gap-4 pt-4">
+                        <h3 class="font-serif text-2xl">Latte de la casa</h3>
+                        <span class="pt-1 text-sm font-medium text-rosa">$65</span>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="photo-frame aspect-[4/5] overflow-hidden rounded-2xl bg-vino/30">
+                        <img src="img/negro.jpg" alt="Café filtrado preparado al momento"
+                            class="h-full w-full object-cover" loading="lazy">
+                    </div>
+                    <div class="flex items-start justify-between gap-4 pt-4">
+                        <h3 class="font-serif text-2xl">Café Negro</h3>
+                        <span class="pt-1 text-sm font-medium text-rosa">$58</span>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="photo-frame aspect-[4/5] overflow-hidden rounded-2xl bg-vino/30">
+                        <img src="img/capuchino.jpg" alt="Capuchino espumoso acompañado de un pan recién horneado"
+                            class="h-full w-full object-cover" loading="lazy">
+                    </div>
+                    <div class="flex items-start justify-between gap-4 pt-4">
+                        <h3 class="font-serif text-2xl">Capuchino</h3>
+                        <span class="pt-1 text-sm font-medium text-rosa">$72</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="opiniones" aria-labelledby="opiniones-title" class="bg-vino/20">
+            <div class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-24">
+                <div class="mx-auto mb-12 max-w-xl text-center">
+                    <h2 id="opiniones-title" class="font-serif text-4xl tracking-tight text-crema sm:text-5xl">Café para
+                        Fist Pump.</h2>
+                </div>
+
+                <div class="grid gap-5 md:grid-cols-3">
+                    <article class="rounded-2xl bg-ciruela p-7 ring-1 ring-white/10 sm:p-8">
+                        <p class="mb-5 text-lg leading-7 text-crema">“CAFÉÉÉÉÉÉÉÉÉÉÉ!!!!”</p>
+                        <footer class="flex items-center gap-3 text-sm font-semibold">
+                            <img src="img/mordecai.jpg" alt="Mordecai, cliente de Café Café"
+                                class="h-11 w-11 rounded-full object-cover" loading="lazy">
+                            <span>
+                                Mordecai.
+                                <span class="mt-0.5 block font-normal text-stone-400">Cliente</span>
+                            </span>
+                        </footer>
+                    </article>
+
+                    <article class="rounded-2xl bg-ciruela p-7 ring-1 ring-white/10 sm:p-8">
+                        <p class="mb-5 text-lg leading-7 text-crema">“FIST PUUUUMP!!!!”</p>
+                        <footer class="flex items-center gap-3 text-sm font-semibold">
+                            <img src="img/rigby.jpg" alt="Rigby, cliente de Café Café"
+                                class="h-11 w-11 rounded-full object-cover" loading="lazy">
+                            <span>
+                                Rigby.
+                                <span class="mt-0.5 block font-normal text-stone-400">Cliente</span>
+                            </span>
+                        </footer>
+                    </article>
+
+                    <article class="rounded-2xl bg-ciruela p-7 ring-1 ring-white/10 sm:p-8">
+                        <p class="mb-5 text-lg leading-7 text-crema">“Mordecai y Rigby hicieron todo su trabajo ... (y
+                            tambien en tiempo record).”</p>
+                        <footer class="flex items-center gap-3 text-sm font-semibold">
+                            <img src="img/skips.jpg" alt="Skips, observador de Café Café"
+                                class="h-11 w-11 rounded-full object-cover" loading="lazy">
+                            <span>
+                                Skips.
+                                <span class="mt-0.5 block font-normal text-stone-400">Observador</span>
+                            </span>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="visitanos" aria-labelledby="visit-title"
+            class="mx-auto grid max-w-7xl gap-8 px-5 py-20 sm:px-8 sm:py-24 md:grid-cols-2 md:items-center">
+            <div>
+                <h2 id="visit-title" class="font-serif text-4xl tracking-tight sm:text-5xl">Café Café.</h2>
+                <p class="mt-5 max-w-md leading-7 text-stone-300">Llegamos por ti cuando nesecitas unos boletos para
+                    Fist Pump.</p>
+            </div>
+
+            <div class="not-italic md:justify-self-end">
+                <p class="font-semibold">Café Café</p>
+                <p class="mt-1 text-stone-300">Lunes a sábado · 8:00 a 20:00</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/10">
+        <div
+            class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 text-sm text-stone-400 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+            <p>© 2026 Café Café.</p>
+            <a href="#inicio" class="inline-flex items-center gap-1 font-medium text-stone-300 hover:text-rosa">
+                Volver arriba
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="h-4 w-4" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 19V5m-6 6 6-6 6 6" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
